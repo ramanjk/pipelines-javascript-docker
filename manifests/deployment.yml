@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ramanjkpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ramanjkpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: ramanjkpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: ramanjkpipelinesjavascriptdocker 
+          image: mycontainerregistry123myapp.azurecr.io/ramanjkpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
