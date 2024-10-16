@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: ramanjkpipelinesjavascriptdocker 
-          image: mycontainerregistry123myapp.azurecr.io/ramanjkpipelinesjavascriptdocker
+          image: testregacr.azurecr.io/ramanjkpipelinesjavascriptdocker
           ports:
           - containerPort: 8080
